@@ -3,20 +3,20 @@ class Person {
     String major;
     final String university = "GadjahMada";
 
-    Person(String paramName, String paramMajor) { //constructor
-        name = paramName;
-        major = paramMajor;
+    Person(String name, String major) { //constructor
+        this.name = name;
+        this.major = major;
     }
 
-    Person(String paramName) { //constructor overloading
-        this(paramName, null); //call other constructor
+    Person(String name) { //constructor overloading
+        this(name, null); //call other constructor
     }
 
     Person() { //constructor overloading
         this(null); //call other constructor
     }
 
-    void SayHello(String paramName) {
-        System.out.println("Halo " + paramName + ", perkenalkan nama saya " + name);
+    void SayHello(String name) {
+        System.out.println("Halo " + name + ", perkenalkan nama saya " + this.name);
     }
 }

@@ -64,4 +64,52 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 
 - cara memanggil constructor lain kita hanya perlu memanggilnya seperti memanggil method namun dengan kata kunci this.
 
-> **variable shadowing** = yaitu ketika nama variable sama dalam scope intinya hati hati aja kalo dalam class **jangan sampai** nama field dan parameter method class sama
+> **variable shadowing** = yaitu ketika nama variable sama dalam scope intinya hati hati aja kalo dalam class **jangan sampai** nama field dan parameter method class sama. untuk mengatasi variable shadowing kita dapat menggunakan this **keyword**
+
+# This Keyword
+
+- saat membuat field dalam block class / constructor bisa menggunakan this untuk mengakses objek saat ini
+
+- misal untuk mengakses field yang namanya sama dengan parameter method ini dapat di solved dengan this.
+
+- selain mengakses field saat ini this juga bisa untuk mengakses method.
+
+- intinya this menyelesaikan masalah **variabel shadowing** agar gak kebanyakan nama variabel.
+
+# Inheritance
+
+- Inheritance (pewarisan) adalah kemampuan menurunkan sebuah class ke class lainnya.
+
+- intinya  ada class Parent & class Child
+
+- satu **parent bisa punya banyak child** tapi **satu child cuma boleh punya satu parent.** kalo di Java gini.
+
+- saat sebuah class diturunkan maka semua field dan method Parent akan dimiliki juga oleh Child.
+
+- untuk melakukan inheritance, di class Child, kita harus menggunakan keyword extends lalu diikuti nama class parentnya.
+
+## Method Overriding
+
+- Method Overriding adalah kemampuan mendeklarasikan ulang method di child class yang sudah ada di Parent class.
+
+- saat melakukan Method Overriding secara otomatis saat membuat object dari class child method yang ada di parent sudah tidak bisa diakses lagi.
+
+- jangan sampe ketuker antara method overriding dan method overloading
+
+## Super Keyword
+
+- Super Keyword berfungsi untuk mengakses method parent class yang sudah di override
+
+- tidak hanya method, field milik class parent juga bisa diakses dengan super keyword
+
+# Super Constructor
+
+- super juga bisa buat akses constructor parent
+
+- syarat untuk mengakses parent class constructor yaitu aksesnya harus lewat child class constructor
+
+- jika semua constructor dalam parent memiliki parameter maka child class wajib untuk constructor parent tersebut.
+
+- jadi intinya kalo ada constructor tanpa parameter itu artinya punya default constructor dan child class gak wajib akses parent constructor.
+
+- ya kayak calling other constructor dalam satu class kan pake this nah kalo inheritance antara parent ke class maka gunakan super.

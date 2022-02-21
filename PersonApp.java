@@ -11,6 +11,7 @@ public class PersonApp {
         person1.SayHello("budi");
 
         Person person2 = new Person("Arief"); //hasil overloding constructor
+        person2.SayHello("bagus");
 
         Person person3;
         person3 = new Person(); //hasil overloding constructor
