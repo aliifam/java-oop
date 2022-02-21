@@ -130,3 +130,12 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 
 - Polymorphism erat kaitannya dengan inheritance.
 
+- Polymorphism dapat diset dalam parameter sebuah method
+
+# Type check & Cast
+
+- cast juga dapat dilakukan untuk tipe data nonprimitif
+
+- agar aman sebelum casting harus melakukan type check dulu dengan keyword instanceof
+
+- hasil dari operator instanceof adalah boolean bila sama maka true kalo beda false 
