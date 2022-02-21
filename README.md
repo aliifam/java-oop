@@ -66,7 +66,7 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 
 > **variable shadowing** = yaitu ketika nama variable sama dalam scope intinya hati hati aja kalo dalam class **jangan sampai** nama field dan parameter method class sama. untuk mengatasi variable shadowing kita dapat menggunakan this **keyword**
 
-# This Keyword
+## This Keyword
 
 - saat membuat field dalam block class / constructor bisa menggunakan this untuk mengakses objek saat ini
 
@@ -102,7 +102,7 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 
 - tidak hanya method, field milik class parent juga bisa diakses dengan super keyword
 
-# Super Constructor
+## Super Constructor
 
 - super juga bisa buat akses constructor parent
 
@@ -113,3 +113,20 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 - jadi intinya kalo ada constructor tanpa parameter itu artinya punya default constructor dan child class gak wajib akses parent constructor.
 
 - ya kayak calling other constructor dalam satu class kan pake this nah kalo inheritance antara parent ke class maka gunakan super.
+
+## object class 
+
+- kalo di Java semua class yang dibuat secara otomatis adalah turunan dari object class.
+
+- walaupun tidak secara eksplisit tertulis *extends Object* namun ya ini otomatis dari Java nya.
+
+- bisa dikatakan Object adalah super class dari semua class dalam Java.
+
+# Polymorphism
+
+- berasal dari bahasa yunani arti dari polmorphism iu banyak bentuk.
+
+- dalam oop polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain.
+
+- Polymorphism erat kaitannya dengan inheritance.
+
