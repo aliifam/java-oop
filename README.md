@@ -122,6 +122,18 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 
 - bisa dikatakan Object adalah super class dari semua class dalam Java.
 
+## variable hiding
+
+- variable hiding terjadi ketika nama field di class child dan parent sama
+
+- tidak ada yg namanya variable override yang ada itu variable hiding
+
+- untuk mengatasi variable hiding bisa gunakan super keyword
+
+- bedanya variable hiding dan method overriding yaitu ketika object di cast
+
+- saat object di cast method akan tetap mengakses method overriding namun variable/field akan mengakses variable/field yang ada di dalam classnya.
+
 # Polymorphism
 
 - berasal dari bahasa yunani arti dari polmorphism iu banyak bentuk.
@@ -139,3 +151,33 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 - agar aman sebelum casting harus melakukan type check dulu dengan keyword instanceof
 
 - hasil dari operator instanceof adalah boolean bila sama maka true kalo beda false 
+
+# Package
+
+- berfungsi untuk mengelompokkan class - class dalam sebuah folder agar lebih mudah diklasifikasi
+
+- dalam java mendukung nested package cara aksesnya dengan tanda titik di setiap cabang
+
+- saat nyimpen class dalam sebuah package maka wajib menyebutkan nama packagenya di atas file javanya.
+
+# Access modifier
+
+- Access modifier adalah kemampuan untuk membuat class, field, method, dan constructor dapat diakses darimana saja.
+
+## Access Level
+
+1. public = class, package, subclass, world
+
+2. protected = class, package, subclass
+
+3. no modifier = class, package
+
+4. private = class
+
+> dalam satu file hanya bisa bikin satu public class dengan nama class yang sama dengan nama filenya.
+
+# import
+
+- import adalah kemampuan untuk menggunakan class yang berada di package yang berbeda
+
+- syarat class yang digunakan jika berbeda packagenya, class harus bersifat public.
