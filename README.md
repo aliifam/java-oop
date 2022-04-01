@@ -181,3 +181,5 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 - import adalah kemampuan untuk menggunakan class yang berada di package yang berbeda
 
 - syarat class yang digunakan jika berbeda packagenya, class harus bersifat public.
+
+- semua package yang berada dalam java.lang sudah default auto import seperti String, dll.

@@ -1,6 +1,6 @@
 package aliif.arief.application;
 
-import aliif.arief.data.Product;
+import aliif.arief.data.*;
 
 public class Application {
     public static void main(String[] args) {
@@ -9,5 +9,7 @@ public class Application {
 
         System.out.println(product.name);
         System.out.println(product.price);
+
+        Data data = new Data();
     }
 }
