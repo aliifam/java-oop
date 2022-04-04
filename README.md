@@ -183,3 +183,54 @@ OOP (object oriented programming) adalah sebuah paradigma dalam pemrograman yang
 - syarat class yang digunakan jika berbeda packagenya, class harus bersifat public.
 
 - semua package yang berada dalam java.lang sudah default auto import seperti String, dll.
+
+# Abstraction
+## abstract class
+
+- Abstract class artinya, class tersebut tidak bisa dibuat sebagai object secara langsung, hanya bisa diturunkans
+
+- gunakan kata kunci abstract sebelum kata kunci class
+
+- abstract class bisa kita gunakan sebagai kontrak untuk class child
+
+## abstract method
+
+- Saat membuat class yang abstract, kita bisa membuat abstract method juga di dalam class abstract tersebut
+
+- Saat  membuat sebuah abstract method, kita tidak boleh membuat block method untuk method tersebut
+
+- abstract method wajib di override di class child
+
+- Abstract method tidak boleh memiliki access modifier private
+
+
+# Encapsulation
+
+- Encapsulation artinya memastikan data sensitif sebuah object tersembunyi dari akses luar
+
+- tujuan agar kita bisa menjaga agar data sebuah object tetap baik dan valid
+
+- semua access modifier di private
+
+- Agar bisa diubah, kita akan menyediakan method untuk mengubah dan mendapatkan field tersebut yaitu GETTER & SETTER
+
+- Getter => untuk menagmbil data field
+
+- Setter => untuk mengubah data field
+
+
+# Interface
+
+- untuk membuat kontrak lebih baik guhnakan interface dibanding abstract class
+
+- Interface mirip seperti abstract class, yang membedakan adalah di Interface, semua method otomatis abstract, tidak memiliki block
+
+- Di interface kita tidak boleh memiliki field, kita hanya boleh memiliki constant (field yang tidak bisa diubah)
+
+- Untuk mewariskan interface, kita tidak menggunakan kata kunci extends, melainkan implements
+
+- sebuah child class bisa implement lebih dari 1 interface
+
+-  interface pun bisa implement interface lain, bisa lebih dari 1. Namun jika interface ingin mewarisi interface lain, kita menggunakan kata kunci extends, bukan implements
+
+- ketika sebuah interface sudah terlalu banyak di implements di child maka gunakan default method agar tidak error ketika menambah method kontrak baru
